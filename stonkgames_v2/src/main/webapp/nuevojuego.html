@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Añadir juego</title>
+        <link rel="stylesheet" type="text/css" href="plantilla.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/formulario.css"/> 
+        <link rel="stylesheet" type="text/css" href="./css/comun.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/plantilla.css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <header>
+			<div class="primero">
+				<h1>STONKGAMES Empresas</h1>
+			</div>
+            <div class="cabecera">
+                <ul class="subMenu">
+                    <li class="opciones izquierda" >
+                        <a href="index.html">Página Principal</a>
+                    </li>
+                 
+                    <li class="opciones derecha foto" >
+                        <a id="fotoAvatar" href="cuentausuario.html"><img src="images/avatar.jpg" alt="imagen del usuario" id="imgRedonda" class="principal derecha"></a>
+                    </li>
+                    <li class="opciones derecha" >
+                        <a href="estadisticasjuego.html">Estadísticas</a>
+                    </li>
+                    <li class="opciones derecha" >
+                        <a href="historialsubidos.html">Juegos Subidos</a>
+                    </li>
+
+                </ul>
+            </div>
+		</header>
+
+        <div class="reg">
+            <div class="formulario" id="nuevoRegistro">
+                <div id="reg">
+                    <h2>Nuevo juego</h2>
+                </div>
+                <ul>
+                    <li>
+                        <input type="text" name="usr" placeholder="Nombre del videojuego" class="textFormReg">
+                    </li>
+                    <li>
+                        <form action="/action_page.php" class="textFormReg">
+                            <label>Seleccionar archivo:</label>
+                            <input type="file" id="myfile" name="myfile" multiple><br><br>
+                        </form>                           
+                    </li>
+                    <li>
+                        <textarea name="descripcion" style="width:90%" rows="7" placeholder="Descripción del videojuego" class="textFormReg"></textarea>
+                    </li>
+                    <li>
+                        <input type="text" name="surname" placeholder="Requisitos básicos" class="textFormReg">
+                    </li>
+                    <li>
+                        <input type="email" name="email" placeholder="Precio" class="textFormReg">
+                    </li>
+                    <li>
+                        <input type="submit" name="subirJuego" value="Subir videojuego">
+                        <input type="button" name="cancelar" value="Cancelar" class="derecha">
+                    </li>
+                </ul>
+            </div>               
+        </div>
+
+
+        <footer>
+            <span>Roberto Quiroga Velasco | Pablo Mediavilla Martinez | Aldrin Tango Melgar | Santiago Platero Delgado | 
+            Entrega 2 de Servicios y Sistemas Web | Universidad de Valladolid</span> 
+        </footer>
+    </body>
+</html>
